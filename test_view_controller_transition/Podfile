@@ -1,0 +1,14 @@
+# Uncomment the next line to define a global platform for your project
+source 'https://github.com/CocoaPods/Specs.git'
+
+platform :ios, '9.0'
+inhibit_all_warnings!
+
+target 'test_view_controller_transition' do
+  # Uncomment the next line if you're using Swift or would like to use dynamic frameworks
+  # use_frameworks!
+
+  # Pods for test_view_controller_transition
+  # Reveal
+  pod 'Reveal-SDK', '20', :configurations => ['DEBUG']
+end
