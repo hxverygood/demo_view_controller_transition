@@ -11,15 +11,20 @@
 		AB08BEA22261DF840025DF3F /* ViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB08BEA12261DF840025DF3F /* ViewController.xib */; };
 		AB08BEA62261E1E90025DF3F /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB08BEA42261E1E90025DF3F /* BaseViewController.m */; };
 		AB268F09226193D200BF9429 /* BaseNavigationViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB268F08226193D200BF9429 /* BaseNavigationViewController.m */; };
+		AB2817DB22657AE100BDC113 /* BaseModalAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2817DA22657AE100BDC113 /* BaseModalAnimationController.m */; };
+		AB2817DE2265898200BDC113 /* BaseModalPresentationController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2817DD2265898200BDC113 /* BaseModalPresentationController.m */; };
+		AB2817E12265ADA100BDC113 /* BaseModalTransitionDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2817E02265ADA100BDC113 /* BaseModalTransitionDelegate.m */; };
+		AB2817E42265B16800BDC113 /* PresentedViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB2817E32265B16800BDC113 /* PresentedViewController.m */; };
+		AB2817E62265B84200BDC113 /* PresentedViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB2817E52265B84200BDC113 /* PresentedViewController.xib */; };
 		AB64F47A226032C100B42E39 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB64F479226032C100B42E39 /* AppDelegate.m */; };
 		AB64F47D226032C100B42E39 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB64F47C226032C100B42E39 /* ViewController.m */; };
 		AB64F480226032C100B42E39 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB64F47E226032C100B42E39 /* Main.storyboard */; };
 		AB64F482226032C300B42E39 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = AB64F481226032C300B42E39 /* Assets.xcassets */; };
 		AB64F485226032C300B42E39 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = AB64F483226032C300B42E39 /* LaunchScreen.storyboard */; };
 		AB64F488226032C300B42E39 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = AB64F487226032C300B42E39 /* main.m */; };
-		AB64F49422603CCC00B42E39 /* SlideAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB64F49322603CCC00B42E39 /* SlideAnimationController.m */; };
-		AB64F4992260642200B42E39 /* HXPopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB64F4972260642200B42E39 /* HXPopViewController.m */; };
-		AB64F49A2260642200B42E39 /* HXPopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB64F4982260642200B42E39 /* HXPopViewController.xib */; };
+		AB64F49422603CCC00B42E39 /* BaseSlideAnimationController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB64F49322603CCC00B42E39 /* BaseSlideAnimationController.m */; };
+		AB64F4992260642200B42E39 /* PopViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = AB64F4972260642200B42E39 /* PopViewController.m */; };
+		AB64F49A2260642200B42E39 /* PopViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = AB64F4982260642200B42E39 /* PopViewController.xib */; };
 		AB64F49D2260713E00B42E39 /* BaseNavigationDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = AB64F49C2260713E00B42E39 /* BaseNavigationDelegate.m */; };
 /* End PBXBuildFile section */
 
@@ -30,6 +35,15 @@
 		AB08BEA52261E1E90025DF3F /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
 		AB268F07226193D200BF9429 /* BaseNavigationViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavigationViewController.h; sourceTree = "<group>"; };
 		AB268F08226193D200BF9429 /* BaseNavigationViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationViewController.m; sourceTree = "<group>"; };
+		AB2817D922657AE100BDC113 /* BaseModalAnimationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModalAnimationController.h; sourceTree = "<group>"; };
+		AB2817DA22657AE100BDC113 /* BaseModalAnimationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModalAnimationController.m; sourceTree = "<group>"; };
+		AB2817DC2265898200BDC113 /* BaseModalPresentationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModalPresentationController.h; sourceTree = "<group>"; };
+		AB2817DD2265898200BDC113 /* BaseModalPresentationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModalPresentationController.m; sourceTree = "<group>"; };
+		AB2817DF2265ADA100BDC113 /* BaseModalTransitionDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseModalTransitionDelegate.h; sourceTree = "<group>"; };
+		AB2817E02265ADA100BDC113 /* BaseModalTransitionDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseModalTransitionDelegate.m; sourceTree = "<group>"; };
+		AB2817E22265B16800BDC113 /* PresentedViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PresentedViewController.h; sourceTree = "<group>"; };
+		AB2817E32265B16800BDC113 /* PresentedViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PresentedViewController.m; sourceTree = "<group>"; };
+		AB2817E52265B84200BDC113 /* PresentedViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PresentedViewController.xib; sourceTree = "<group>"; };
 		AB64F475226032C100B42E39 /* test_view_controller_transition.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = test_view_controller_transition.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		AB64F478226032C100B42E39 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		AB64F479226032C100B42E39 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -40,11 +54,11 @@
 		AB64F484226032C300B42E39 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		AB64F486226032C300B42E39 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		AB64F487226032C300B42E39 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
-		AB64F49222603CCC00B42E39 /* SlideAnimationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SlideAnimationController.h; sourceTree = "<group>"; };
-		AB64F49322603CCC00B42E39 /* SlideAnimationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SlideAnimationController.m; sourceTree = "<group>"; };
-		AB64F4962260642200B42E39 /* HXPopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HXPopViewController.h; sourceTree = "<group>"; };
-		AB64F4972260642200B42E39 /* HXPopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = HXPopViewController.m; sourceTree = "<group>"; };
-		AB64F4982260642200B42E39 /* HXPopViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = HXPopViewController.xib; sourceTree = "<group>"; };
+		AB64F49222603CCC00B42E39 /* BaseSlideAnimationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseSlideAnimationController.h; sourceTree = "<group>"; };
+		AB64F49322603CCC00B42E39 /* BaseSlideAnimationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseSlideAnimationController.m; sourceTree = "<group>"; };
+		AB64F4962260642200B42E39 /* PopViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PopViewController.h; sourceTree = "<group>"; };
+		AB64F4972260642200B42E39 /* PopViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PopViewController.m; sourceTree = "<group>"; };
+		AB64F4982260642200B42E39 /* PopViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = PopViewController.xib; sourceTree = "<group>"; };
 		AB64F49B2260713E00B42E39 /* BaseNavigationDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseNavigationDelegate.h; sourceTree = "<group>"; };
 		AB64F49C2260713E00B42E39 /* BaseNavigationDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationDelegate.m; sourceTree = "<group>"; };
 		AB64F49E226075C000B42E39 /* BaseTransitionConst.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTransitionConst.h; sourceTree = "<group>"; };
@@ -132,8 +146,14 @@
 				AB64F49E226075C000B42E39 /* BaseTransitionConst.h */,
 				AB64F49B2260713E00B42E39 /* BaseNavigationDelegate.h */,
 				AB64F49C2260713E00B42E39 /* BaseNavigationDelegate.m */,
-				AB64F49222603CCC00B42E39 /* SlideAnimationController.h */,
-				AB64F49322603CCC00B42E39 /* SlideAnimationController.m */,
+				AB64F49222603CCC00B42E39 /* BaseSlideAnimationController.h */,
+				AB64F49322603CCC00B42E39 /* BaseSlideAnimationController.m */,
+				AB2817DF2265ADA100BDC113 /* BaseModalTransitionDelegate.h */,
+				AB2817E02265ADA100BDC113 /* BaseModalTransitionDelegate.m */,
+				AB2817D922657AE100BDC113 /* BaseModalAnimationController.h */,
+				AB2817DA22657AE100BDC113 /* BaseModalAnimationController.m */,
+				AB2817DC2265898200BDC113 /* BaseModalPresentationController.h */,
+				AB2817DD2265898200BDC113 /* BaseModalPresentationController.m */,
 			);
 			path = Transition;
 			sourceTree = "<group>";
@@ -144,9 +164,12 @@
 				AB64F47B226032C100B42E39 /* ViewController.h */,
 				AB64F47C226032C100B42E39 /* ViewController.m */,
 				AB08BEA12261DF840025DF3F /* ViewController.xib */,
-				AB64F4962260642200B42E39 /* HXPopViewController.h */,
-				AB64F4972260642200B42E39 /* HXPopViewController.m */,
-				AB64F4982260642200B42E39 /* HXPopViewController.xib */,
+				AB64F4962260642200B42E39 /* PopViewController.h */,
+				AB64F4972260642200B42E39 /* PopViewController.m */,
+				AB64F4982260642200B42E39 /* PopViewController.xib */,
+				AB2817E22265B16800BDC113 /* PresentedViewController.h */,
+				AB2817E32265B16800BDC113 /* PresentedViewController.m */,
+				AB2817E52265B84200BDC113 /* PresentedViewController.xib */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -221,9 +244,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				AB08BEA22261DF840025DF3F /* ViewController.xib in Resources */,
+				AB2817E62265B84200BDC113 /* PresentedViewController.xib in Resources */,
 				AB64F485226032C300B42E39 /* LaunchScreen.storyboard in Resources */,
 				AB64F482226032C300B42E39 /* Assets.xcassets in Resources */,
-				AB64F49A2260642200B42E39 /* HXPopViewController.xib in Resources */,
+				AB64F49A2260642200B42E39 /* PopViewController.xib in Resources */,
 				AB64F480226032C100B42E39 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -284,11 +308,15 @@
 			files = (
 				AB64F47D226032C100B42E39 /* ViewController.m in Sources */,
 				AB08BEA62261E1E90025DF3F /* BaseViewController.m in Sources */,
-				AB64F49422603CCC00B42E39 /* SlideAnimationController.m in Sources */,
-				AB64F4992260642200B42E39 /* HXPopViewController.m in Sources */,
+				AB64F49422603CCC00B42E39 /* BaseSlideAnimationController.m in Sources */,
+				AB64F4992260642200B42E39 /* PopViewController.m in Sources */,
+				AB2817DE2265898200BDC113 /* BaseModalPresentationController.m in Sources */,
+				AB2817E12265ADA100BDC113 /* BaseModalTransitionDelegate.m in Sources */,
 				AB268F09226193D200BF9429 /* BaseNavigationViewController.m in Sources */,
 				AB64F49D2260713E00B42E39 /* BaseNavigationDelegate.m in Sources */,
 				AB64F488226032C300B42E39 /* main.m in Sources */,
+				AB2817E42265B16800BDC113 /* PresentedViewController.m in Sources */,
+				AB2817DB22657AE100BDC113 /* BaseModalAnimationController.m in Sources */,
 				AB64F47A226032C100B42E39 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

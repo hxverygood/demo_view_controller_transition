@@ -73,14 +73,14 @@ static CGFloat naviFontSize = 18.0;
     CGFloat viewWidth = [UIScreen mainScreen].bounds.size.width;
     CGFloat viewHeight = [UIScreen mainScreen].bounds.size.height;
     if (self.navigationController.navigationBar.hidden == NO) {
-        viewHeight -= (64.0 + (isIPhoneXSeries() ? isIPhoneXSeries_Top_Offset() : 0.0));
-        y = 64.0;
+        viewHeight -= (64.0 + isIPhoneXSeries_Top_Offset() + isIPhoneXSeries_Bottom_Offset());
+        y = 64.0 + isIPhoneXSeries_Top_Offset();
     }
 
     // 判断 tabbar 是否显示
     if (self.tabBarController != nil &&
         self.tabBarController.tabBar.isHidden == NO) {
-        viewHeight -= (34.0 + (isIPhoneXSeries() ? isIPhoneXSeries_Bottom_Offset() : 0.0));
+        viewHeight -= 49.0;
     }
 
     self.view.frame = CGRectMake(0.0, y, viewWidth, viewHeight);
@@ -119,15 +119,17 @@ static CGFloat naviFontSize = 18.0;
         [[UIApplication sharedApplication] setStatusBarStyle:UIStatusBarStyleLightContent animated:YES];
         
         self.navigationController.navigationBar.translucent = YES;
+         self.navigationController.edgesForExtendedLayout = UIRectEdgeTop;
         // 导航栏背景透明
         [self.navigationController.navigationBar setBackgroundImage:[UIImage new]
                                                       forBarMetrics:UIBarMetricsDefault];
         self.navigationController.navigationBar.shadowImage = [UIImage new];
         // navbar背景颜色
         self.navigationController.navigationBar.barTintColor = [UIColor clearColor];
-        
-        
-        self.navigationController.edgesForExtendedLayout = UIRectEdgeTop;
+        // navbar title的颜色
+        self.navigationController.navigationBar.titleTextAttributes = \
+        @{NSFontAttributeName:[UIFont systemFontOfSize:naviFontSize],
+          NSForegroundColorAttributeName:[UIColor whiteColor]};
     }
     else {
         self.navigationController.navigationBar.hidden = NO;
@@ -140,6 +142,10 @@ static CGFloat naviFontSize = 18.0;
         self.navigationController.edgesForExtendedLayout = UIRectEdgeTop;
         // navbar背景颜色
         self.navigationController.navigationBar.barTintColor = NAVBAR_BACKGROUND_COLOR;
+        // navbar title的颜色
+        self.navigationController.navigationBar.titleTextAttributes = \
+        @{NSFontAttributeName:[UIFont systemFontOfSize:naviFontSize],
+          NSForegroundColorAttributeName:[UIColor blackColor]};
     }
 }
 

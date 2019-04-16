@@ -8,7 +8,7 @@
 
 #import "BaseNavigationDelegate.h"
 #import "BaseTransitionConst.h"
-#import "SlideAnimationController.h"
+#import "BaseSlideAnimationController.h"
 
 @interface BaseNavigationDelegate ()
 
@@ -52,7 +52,7 @@
         type = TransitionTypePop;
     }
 
-    SlideAnimationController *animator = [[SlideAnimationController alloc] initWithTransitionType:type];
+    BaseSlideAnimationController *animator = [[BaseSlideAnimationController alloc] initWithTransitionType:type];
     return animator;
 }
 

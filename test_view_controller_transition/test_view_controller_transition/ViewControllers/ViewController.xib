@@ -20,7 +20,7 @@
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="bHe-PD-Uhq">
-                    <rect key="frame" x="122.5" y="269" width="75" height="30"/>
+                    <rect key="frame" x="122.5" y="239" width="75" height="30"/>
                     <constraints>
                         <constraint firstAttribute="height" constant="30" id="wCe-dH-q2S"/>
                     </constraints>
@@ -32,11 +32,26 @@
                         <action selector="pushButtonAction:" destination="-1" eventType="touchUpInside" id="1tp-Wc-Ygq"/>
                     </connections>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Hif-rs-DwG">
+                    <rect key="frame" x="113.5" y="299" width="93" height="30"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="30" id="DD7-2d-z4B"/>
+                    </constraints>
+                    <inset key="contentEdgeInsets" minX="20" minY="0.0" maxX="20" maxY="0.0"/>
+                    <state key="normal" title="Present">
+                        <color key="titleColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </state>
+                    <connections>
+                        <action selector="presentButtonAction:" destination="-1" eventType="touchUpInside" id="HJg-K4-MXT"/>
+                    </connections>
+                </button>
             </subviews>
             <color key="backgroundColor" red="1" green="0.88291732883321472" blue="0.0" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
             <constraints>
-                <constraint firstItem="bHe-PD-Uhq" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="fXm-2s-kog"/>
+                <constraint firstItem="Hif-rs-DwG" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="XDL-mY-g8E"/>
+                <constraint firstItem="bHe-PD-Uhq" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="-30" id="fXm-2s-kog"/>
                 <constraint firstItem="bHe-PD-Uhq" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="hYf-3V-caL"/>
+                <constraint firstItem="Hif-rs-DwG" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" constant="30" id="o76-Kh-wpJ"/>
             </constraints>
         </view>
     </objects>

@@ -7,7 +7,10 @@
 //
 
 #import "ViewController.h"
-#import "HXPopViewController.h"
+#import "PopViewController.h"
+#import "BaseModalTransitionDelegate.h"
+#import "PresentedViewController.h"
+
 
 @interface ViewController ()
 
@@ -22,10 +25,19 @@
 }
 
 - (IBAction)pushButtonAction:(id)sender {
-    HXPopViewController *vc = [[HXPopViewController alloc] init];
+    PopViewController *vc = [[PopViewController alloc] init];
     vc.navbarIsTranslucent = YES;
     vc.hidesBottomBarWhenPushed = YES;
     [self.navigationController pushViewController:vc animated:YES];
+}
+
+- (IBAction)presentButtonAction:(id)sender {
+    BaseModalTransitionDelegate *delegate = [[BaseModalTransitionDelegate alloc] init];
+
+    PresentedViewController *vc = [[PresentedViewController alloc] init];
+    vc.transitioningDelegate = delegate;
+    vc.modalPresentationStyle = UIModalPresentationCustom;
+    [self presentViewController:vc animated:YES completion:nil];
 }
 
 @end

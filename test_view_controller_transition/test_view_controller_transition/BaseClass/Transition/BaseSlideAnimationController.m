@@ -1,16 +1,16 @@
 //
-//  SlideAnimationController.m
+//  BaseSlideAnimationController.m
 //  test_view_controller_transition
 //
 //  Created by shandiangou on 2019/4/12.
 //  Copyright © 2019 lightingdog. All rights reserved.
 //
 
-#import "SlideAnimationController.h"
+#import "BaseSlideAnimationController.h"
 
 
 
-@interface SlideAnimationController ()
+@interface BaseSlideAnimationController ()
 
 @property (nonatomic, assign) TransitionType transitionType;
 
@@ -18,7 +18,7 @@
 
 
 
-@implementation SlideAnimationController
+@implementation BaseSlideAnimationController
 
 #pragma mark - Initializer
 
@@ -96,8 +96,10 @@
             break;
 
         default:
-            // 1.将 toView 添加到容器视图中
-            [containerView addSubview:toView];
+            if ((transitionContext.presentationStyle == UIModalPresentationCustom &&
+                fromVC.isBeingDismissed) == NO) {
+                [containerView addSubview:toView];
+            }
             break;
     }
 

@@ -1,17 +1,16 @@
 //
-//  HXPopViewController.h
+//  PresentedViewController.h
 //  test_view_controller_transition
 //
-//  Created by shandiangou on 2019/4/12.
+//  Created by shandiangou on 2019/4/16.
 //  Copyright © 2019 lightingdog. All rights reserved.
 //
 
-#import "BaseViewController.h"
+#import <UIKit/UIKit.h>
 
 NS_ASSUME_NONNULL_BEGIN
 
-@interface HXPopViewController : BaseViewController
-
+@interface PresentedViewController : UIViewController
 
 @end
 
