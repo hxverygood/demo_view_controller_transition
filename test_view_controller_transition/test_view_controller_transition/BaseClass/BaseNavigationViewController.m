@@ -37,8 +37,7 @@
     self = [super initWithRootViewController:rootViewController];
 
     if (self) {
-        BaseNavigationDelegate *delegate = self.naviDelegate;
-        self.delegate = delegate;
+        self.delegate = self.naviDelegate;
     }
     
     return self;

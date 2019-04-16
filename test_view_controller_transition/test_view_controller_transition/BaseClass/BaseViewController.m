@@ -73,7 +73,7 @@ static CGFloat naviFontSize = 18.0;
     CGFloat viewWidth = [UIScreen mainScreen].bounds.size.width;
     CGFloat viewHeight = [UIScreen mainScreen].bounds.size.height;
     if (self.navigationController.navigationBar.hidden == NO) {
-        viewHeight -= (64.0 + isIPhoneXSeries_Top_Offset() + isIPhoneXSeries_Bottom_Offset());
+        viewHeight -= (64.0 + isIPhoneXSeries_Top_Offset());
         y = 64.0 + isIPhoneXSeries_Top_Offset();
     }
 
